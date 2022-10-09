@@ -41,7 +41,7 @@ public class SuperHeroesController : ControllerBase
         return Ok(_superHeroes);
     }
 
-    [HttpPut()]
+    [HttpPut]
     public async Task<ActionResult<List<SuperHero>>> Put(SuperHero request)
     {
         await Task.Delay(1000);
